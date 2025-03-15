@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Algorithms & Simulations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<style>
+        .section-container {
+            background-color: #212529;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            width: 200px;
+            height: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-15px);
+/*            transform: scale(1.05);*/
+            color: #ef233c;
+            transition: all 0.3 ease-in-out;
+        }
+
+        .card span{
+            text-align:center ;
+            display: block;
+            font-size: 2.2vw;
+            margin-top: 10px;
+        }
+
+        .card div{
+            text-align:center ;
+            font-size: 1.5vw;
+            height: 40px;
+            margin-top: 50px;
+        }
+
+        .rr{
+            background: #ffffff;
+            padding: 20px;
+            width: 200px;
+            height: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .rr:hover{
+            transform: translateY(-15px);
+/*            transform: scale(1.05);*/
+            color: #ef233c;
+            transition: all 0.3 ease-in-out;
+        }
+
+        .rr span{
+            text-align:center ;
+            display: block;
+            font-size: 2.2vw;
+            margin-top: 35px;
+        }
+
+        .rr div{
+            text-align:center ;
+            font-size: 1.5vw;
+            margin-top: 55px;
+        }
+
+        .srtn{
+            background: #ffffff;
+            padding: 20px;
+            width: 200px;
+            height: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .srtn span{
+            text-align:center ;
+            display: block;
+            font-size: 2.0vw;
+            margin-top: 10px;
+        }
+
+        .srtn div{
+            text-align:center ;
+            font-size: 1.5vw;
+            margin-top: 20px;
+        }
+
+        .srtn:hover{
+            transform: translateY(-15px);
+/*            transform: scale(1.05);*/
+            color: #ef233c;
+            transition: all 0.3 ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+    <nav>
+        <ul>
+            <li><a href="#Algorithm">Algorithms</a></li>
+            <li><a href="#Simulations">Simulations</a></li>
+        </ul>
+    </nav>
+</header>
+
+     <div class="font1 headingcontainer">
+        <h1 >
+    <span class="text-color">Algorithms</span> 
+    <span class="symbol-color">&</span> 
+    <span class="text-color">Simulations</span>
+        </h1>
+    <p class="subtitle font2">
+           Welcome to <b><span>Algorithms</span> & <span>Simulations</span></b>! This website helps you understand 
+    and experiment with <span>different scheduling algorithms</span> used in <br><br>operating systems.
+    The <b>Algorithm Section</b> provides detailed explanations of <span>various scheduling techniques</span> such as 
+    <span>FCFS</span>, <span>Round Robin</span>, <br><br> <span>Priority Scheduling</span>, and <span>SRTN</span>.
+    The <b>Simulation Section</b> allows you to interactively <span>test these algorithms</span> with custom inputs and see 
+    how <br><br> they work in <span>real-time</span>.
+    </div>
+        
+    <div class="Algorithm font1">
+        <h2 id="Algorithm">
+            Algorithms    
+        </h2>
+        <p class = "font2">
+            An algorithm is a step-by-step procedure designed to perform a specific task or solve a problem efficiently.<br> It follows a well-defined sequence of operations, ensuring consistent and repeatable results.Algorithms are the backbone of <br>computing, playing a crucial role in data processing, artificial intelligence, cryptography, and operating systems. In scheduling,<br> algorithms manage how tasks are executed by the CPU, optimizing resource utilization and improving system performance. Various <br> scheduling techniques like FCFS, Round Robin,Priority Scheduling, and SRTN determine the order of execution based on predefined rules.<br> Understanding these algorithms helps in designing efficient systems, reducing waiting time, and enhancing overall computing speed.
+        </p>
+    </div>
+
+    <div class="section-container">
+        <div class="container">
+
+            <a href="fcfs.html" >
+                <div class="card">F.C.F.S
+                    <span>First Come First Serves</span>
+                    <div>
+                        Non - Pre-Emptive Scheduling
+                    </div>
+                </div>
+            </a>
+
+            <a href="sjf.html" >
+                <div class="card">S.J.F
+                    <span>Shortest Job First</span>
+                    <div>
+                        Non - Pre-Emptive Scheduling
+                    </div>
+                </div>
+            </a>
+
+            <a href="srtn.html" >
+                <div class="srtn"> S.R.T.N
+                    <span>Shortest Remaining Time Next</span>
+                    <div>
+                        Pre-Emptive Scheduling
+                    </div>
+                </div>
+            </a>
+
+            <a href="rr.html" >
+                <div class="rr">R.R
+                    <span>Round Robin</span>
+                    <div>
+                        Pre-Emptive Scheduling
+                    </div>
+                </div>
+            </a>
+
+            <a href="pp.html" >
+                <div class="card">P.P
+                    <span>Priority Scheduling</span>
+                    <div>
+                        Pre-Emptive Scheduling
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="Simu font1">
+        <h2 id="Simulations">
+            Simulations    
+        </h2>
+        <p class = "font2">
+            A simulation is a process of mimicking the behavior of a real-world system to analyze and understand its performance under different conditions.<br> In computing, simulations are widely used to test algorithms, model system behavior, and optimize decision-making without affecting actualoperations.<br> 
+            In scheduling, simulations help visualize how different algorithms manage CPU processes, allocate resources, and handle multitasking in an operating system.<br> By running a simulation, you can observe key performance metrics like waiting time, turnaround time, and response time, allowing for a deeper <br>understanding of scheduling efficiency.This website offers an interactive Simulation Section where you can input custom values, run scheduling algorithms, <br>and observe real-time results. This hands-on approach helps bridge the gap between theoretical concepts and practical implementation.
+        </p>
+    </div>
+
+    <a href="simulation.html" class="button"><div>View</div></a>
+
+
+
+</body>
+</html>
