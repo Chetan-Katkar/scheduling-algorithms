@@ -171,7 +171,8 @@ html {
     text-align: center;
     font-size: 1.3vw;
     color: #fffcf2; 
-/*    transform: translateX(50px);*/
+    
+    /*    transform: translateX(50px);*/
 }
 
 .button{
@@ -196,4 +197,21 @@ html {
 .button div:hover{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+}
+
+.user{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3em;
+    margin:100px auto 0px auto}
+
+.userp{
+    text-align: center;
+    font-size: 3em;
+    color: #d81159;
+    margin-top: 0px;
+}
+
+.username{
+    margin-top: 8%;
 }
