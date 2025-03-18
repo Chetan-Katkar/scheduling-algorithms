@@ -15,107 +15,118 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <style>
         .section-container {
-            background-color: #212529;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60vh;
-        }
-        .container {
-            display: flex;
-            gap: 20px;
-        }
-        .card {
-            background: #ffffff;
-            padding: 20px;
-            width: 200px;
-            height: 220px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .card:hover {
-            transform: translateY(-15px);
-/*            transform: scale(1.05);*/
-            color: #ef233c;
-            transition: all 0.3 ease-in-out;
-        }
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 20px;
+}
 
-        .card span{
-            text-align:center ;
-            display: block;
-            font-size: 2.2vw;
-            margin-top: 10px;
-        }
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+    justify-content: center;
+}
 
-        .card div{
-            text-align:center ;
-            font-size: 1.5vw;
-            height: 40px;
-            margin-top: 50px;
-        }
+/* Common Card Styles */
+.card, .rr, .srtn {
+    background: #ffffff;
+    padding: 20px;
+    width: 200px;
+    height: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
 
-        .rr{
-            background: #ffffff;
-            padding: 20px;
-            width: 200px;
-            height: 220px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
+.card:hover, .rr:hover, .srtn:hover {
+    transform: translateY(-15px);
+    color: #ef233c;
+    transition: all 0.3s ease-in-out;
+}
 
-        .rr:hover{
-            transform: translateY(-15px);
-/*            transform: scale(1.05);*/
-            color: #ef233c;
-            transition: all 0.3 ease-in-out;
-        }
+/* Text Styling */
+.card span, .rr span, .srtn span {
+    text-align: center;
+    display: block;
+    font-size: 2.2vw;
+    margin-top: 10px;
+}
 
-        .rr span{
-            text-align:center ;
-            display: block;
-            font-size: 2.2vw;
-            margin-top: 35px;
-        }
+.card div, .rr div, .srtn div {
+    text-align: center;
+    font-size: 1.5vw;
+    height: 40px;
+    margin-top: 50px;
+}
 
-        .rr div{
-            text-align:center ;
-            font-size: 1.5vw;
-            margin-top: 55px;
-        }
+/* Adjustments for RR & SRTN */
+.rr span {
+    margin-top: 35px;
+}
 
-        .srtn{
-            background: #ffffff;
-            padding: 20px;
-            width: 200px;
-            height: 220px;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
+.rr div {
+    margin-top: 55px;
+}
 
-        .srtn span{
-            text-align:center ;
-            display: block;
-            font-size: 2.0vw;
-            margin-top: 10px;
-        }
+.srtn span {
+    font-size: 2.0vw;
+    margin-top: 10px;
+}
 
-        .srtn div{
-            text-align:center ;
-            font-size: 1.5vw;
-            margin-top: 20px;
-        }
+.srtn div {
+    margin-top: 20px;
+}
 
-        .srtn:hover{
-            transform: translateY(-15px);
-/*            transform: scale(1.05);*/
-            color: #ef233c;
-            transition: all 0.3 ease-in-out;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .card, .rr, .srtn {
+        width: 90%; /* Make cards wider to fit screen */
+        max-width: 300px;
+        height: auto; /* Adjust height dynamically */
+        padding: 20px;
+    }
+
+    .card span, .rr span, .srtn span {
+        font-size: 4vw; /* Increase font size for smaller screens */
+    }
+
+    .card div, .rr div, .srtn div {
+        font-size: 3vw;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card, .rr, .srtn {
+        width: 100%; /* Full width on small phones */
+        max-width: 280px;
+    }
+
+    .card span, .rr span, .srtn span {
+        font-size: 5vw;
+    }
+
+    .card div, .rr div, .srtn div {
+        font-size: 3.5vw;
+        margin-top: 15px;
+    }
+}
+
         }
     </style>
 </head>
@@ -136,11 +147,12 @@
 
 
      <div class="font1 headingcontainer">
-        <h1 >
+        <h1 class = "title">
     <span class="text-color">Algorithms</span> 
     <span class="symbol-color">&</span> 
     <span class="text-color">Simulations</span>
         </h1>
+
     <p class="subtitle font2">
            Welcome to <b><span>Algorithms</span> & <span>Simulations</span></b>! This website helps you understand 
     and experiment with <span>different scheduling algorithms</span> used in <br><br>operating systems.
